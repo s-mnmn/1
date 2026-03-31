@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>职业规划</title>
+</head>
+<body>
+    <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js"></script>
+    <script>
+      new CozeWebSDK.WebChatClient({
+        config: {
+          bot_id: '7619256857714245638',
+        },
+        componentProps: {
+          title: 'Coze',
+        },
+        auth: {
+          type: 'token',
+          token: 'pat_APASfwNoiN7bSFDNW50VBsxIXfePB4fzlhRF6rTJBnGYJhi7GUqVywadTeRafRFe',
+          onRefreshToken: function () {
+            return 'pat_APASfwNoiN7bSFDNW50VBsxIXfePB4fzlhRF6rTJBnGYJhi7GUqVywadTeRafRFe'
+          }
+        }
+      });
+    </script>
+</body>
+</html>
